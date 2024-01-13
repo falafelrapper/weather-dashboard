@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <header class="dashboard">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <div class="input-form">
+            <input class="input is-link" type="text" placeholder="Enter city here">
+            <button id="searchBtn" class="button is-link">Search</button>
+        </div>
+        <div class="saved-cities" id="savedCities">
+
+        </div>
+        <div class="weather-display" id="currentWeather">
+
+        </div>
+        <div class="week-display" id="forecast">
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/javascript/script.js"></script>
 </body>
+
 </html>

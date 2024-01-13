@@ -1,1 +1,24 @@
 /* Main Stylesheet */
+:root{
+    --weather-blue: #0f3a7a;
+    --ice-white: #ffffff;
+}
+
+body{
+    background-color: var(--ice-white);
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard{
+    display: flex;
+    justify-content: center;
+    background-color: var(--weather-blue);
+    color: var(--ice-white);
+    font-family: 'Archivo', sans-serif;
+    font-size: 200%;
+}
+
+.input-form{
+    max-width: 15rem;
+}
